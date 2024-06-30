@@ -102,11 +102,13 @@ body {
 .contact-form button {
     padding: 15px 30px;
     border: none;
-    background-color: #0033cc;
+    background-color: #e7b80c;
     color: white;
     border-radius: 5px;
     font-size: 1em;
     cursor: pointer;
+    border-radius: 25px;
+    width: 80%;
 }
 
 .faq {

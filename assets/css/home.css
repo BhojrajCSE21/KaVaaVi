@@ -1,0 +1,638 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "General Sans", "General Sans Placeholder", sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fafafa;
+}
+
+/*------------------------------------------------------------ Hover Effect ------------------------------------------------------------*/
+/* Underline From Center */
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #bb6100;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+  }
+
+
+/*------------------------------------------------------------ Nav bar ------------------------------------------------------------*/
+header {
+    background-color: #FF7D29;
+    color: #fff;
+    padding: 0.3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo:hover {
+    width: 110px;
+    height: 80px;
+    margin-right: 20px;
+    filter: drop-shadow(1px 1px 1px #FFBF78);
+}
+.logo {
+    width: 110px;
+    height: 80px;
+    margin-right: 20px;
+    filter: drop-shadow(1px 1px 1px #610303f0);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin-right: 220px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+nav li {
+    margin-right: 60px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.get-started {
+    margin-left: auto;
+    background-color: #ffffff;
+    color: #ff8800;
+    padding: 15px 40px;
+    margin-right: 60px;
+    border-radius: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.get-started:hover {
+    background-color: #ff8800;
+    color: white;
+    border: 2px solid white;
+}
+/*------------------------------------------------------------ Nav bar End------------------------------------------------------------*/
+
+/*------------------------------------------------------------ Hero Section (KaVaaVi) ------------------------------------------------------------*/
+main {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    height: auto;
+}
+.hero {
+    background-color: #fff;
+    width: 100%;
+    height: 92vh;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.kavavi-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/assets/images/bg.png);
+    background-position: center;
+}
+
+.kavavi-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 1) 70%);
+    pointer-events: none;
+}
+.kavavi {
+    font-size: 6rem;
+    color: #ffa500;
+    text-shadow: 2px 2px #000;
+    transition: color 0.5s;
+    z-index: 1;
+}
+
+.kavavi span {
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.kavavi .ka:hover, .kavavi .vaa:hover, .kavavi .vi:hover {
+    color: #000;
+    text-shadow: none;
+}
+
+.kavavi-positions {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.kavavi-positions div {
+    position: absolute;
+    color: #333;
+    font-size: 0.9 rem;
+    font-weight: bold;
+}
+
+.kavavi-positions .top-right {
+    top: 20%;
+    right: 20%;
+    opacity: 0.5;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 1;
+    text-align: center;
+}
+
+.kavavi-positions .bottom-left {
+    bottom: 25%;
+    left: 16%;
+    opacity: 0.5;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.kavavi-positions .center-right {
+    top: 44%;
+    right: 10%;
+    opacity: 0.5;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.kavavi-positions .bottom-right {
+    bottom: 25%;
+    right: 16%;
+    opacity: 0.5;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.kavavi-positions .top-left {
+    top: 20%;
+    left: 20%;
+    opacity: 0.5;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.kavavi-positions .center-left {
+    top: 44%;
+    left: 10%;
+    opacity: 0.5;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.kavavi-positions img{
+    width: 23px;
+    margin-bottom: -5px;
+}
+.kavavi-container h3{
+    z-index: 1;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    justify-content: space-between;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.goto-get-started{
+    margin-top: 30px;
+    background-color: #FF7D29;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 20px;
+    border: 2px solid #ff8800;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1;
+    justify-content: space-between;
+    flex-shrink: 0; 
+    width: 200px; 
+}
+.hero-contact-button {
+    margin-top: 30px;
+    background-color: #ffffff;
+    color: #ff8800;
+    padding: 15px 40px;
+    border-radius: 20px;
+    border: 2px solid #ff8800;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1;
+    justify-content: space-between;
+    flex-shrink: 0; 
+    width: 200px; 
+}
+
+.goto-get-started:hover{
+    background-color: white;
+    color: #ff8800;
+    border: 2px solid #ff8800;
+}
+.hero-contact-button:hover {
+    background-color: #ff8800;
+    color: white;
+    border: 2px solid #ff8800;
+}
+/*------------------------------------------------------------ Hero Section End ------------------------------------------------------------*/
+
+/* Trusted By Section */
+#trusted-by {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trusted-by-container {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #e4e4e4d0 0%, #FF7D29 50%, #e4e4e4d0 100%);
+    position: relative;
+}
+
+.top-line {
+    margin-bottom: 20px;
+    margin-top: 0px;
+    padding-top: 0px;
+
+}
+
+.bottom-line {
+    margin-top: 20px;
+}
+
+
+.line::before, .line::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100px;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.529), rgb(255, 255, 255));
+}
+
+.line::after {
+    right: 0;
+    transform: rotate(180deg);
+}
+.trusted-by-container h4{
+    padding: 20px;
+}
+.brand-logos {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.logos {
+    display: flex;
+}
+
+.logos img {
+    width: 12.5%; /* 100% / 8 images */
+    flex-shrink: 0;
+    padding: 10px;
+    margin-right: 200px;
+}
+
+@keyframes scroll-logos {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .trusted-by-brands {
+        flex-wrap: wrap;
+    }
+
+    .trusted-by-brands img {
+        max-width: 80px;
+    }
+}
+/* Trusted by section end */
+
+/* About us */
+
+#about {
+    background-color: #fff; /* Adjust background color as needed */
+    padding: 50px 0;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.about-text h2 {
+    color: #333; /* Adjust text color */
+    font-size: 2rem; /* Adjust font size */
+    margin-bottom: 10px; /* Adjust spacing */
+}
+
+.about-text p {
+    color: #666; /* Adjust text color */
+    line-height: 1.6;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #bc1717; /* Background color for image container */
+}
+
+.about-us img {
+    max-width: 100%; 
+    height: auto; 
+    display: block;
+}
+
+/* About us end  */
+
+/* footer start  */
+footer {
+    background-color: #FF7D29;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 20px;
+    min-width: 250px;
+}
+
+.footer-logo:hover {
+    width: 110px;
+    height: 80px;
+    margin-right: 20px;
+    filter: drop-shadow(1px 1px 1px #FFBF78);
+}
+.footer-logo{
+    width: 110px;
+    height: 80px;
+    margin-right: 20px;
+    filter: drop-shadow(1px 1px 1px #610303f0);
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+}
+
+.footer-column p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.footer-column a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-social-icons a {
+    margin: 0 10px;
+}
+
+.footer-social-icons img {
+    width: 24px;
+    height: 24px;
+    z-index: 1;
+    filter: drop-shadow(2px 2px 1px #000000f0);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-column {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+/*----------------------------------------------------------- Responsive Styles -----------------------------------------------------------*/
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+    }
+    .nav-toggle {
+        display: block;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .nav-toggle:hover {
+        background-color: #444;
+    }
+    .nav-menu.active {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        background-color: #333;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .nav-menu.active li {
+        margin-right: 0px;
+
+    }
+    .nav-menu.active a {
+        color: #fff;
+    }
+    .get-started {
+        display: none;
+    }
+    nav {
+        position: relative;
+    }
+    .kavavi {
+        font-size: 4rem;
+    }
+    .kavavi-container h3{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .button-container {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 10px 20px;
+        gap: 10px;
+    }
+    .goto-get-started, .hero-contact-button {
+        width: 100%; 
+    }
+
+}
+@media (max-width: 1076px) {
+    nav ul {
+        margin-right: 10px;
+    }
+    .kavavi-positions{
+        display: none;
+    }
+    .kavavi-container {
+        position: relative;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-image: url(/assets/images/bg.png);
+        background-position: center;
+    }
+    .hero {
+        height: 62vh;
+    }
+    
+}
+
+
+@media (max-width: 768px) {
+    main {
+        padding: 1em;
+    }
+    section {
+        margin-bottom: 10px;
+    }
+    footer {
+        padding: 0.5em;
+    }
+    footer ul {
+        flex-direction: column;
+    }
+    footer li {
+        margin-right: 0;
+    }
+}

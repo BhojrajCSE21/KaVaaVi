@@ -961,7 +961,120 @@ footer {
     }
 }
 
+/* CTA Section Styles */
+.cta {
+    text-align: center;
+    padding: 50px;
+    margin-top: 50px;
+    background-color: #FF7D29; /* Adjusted background color */
+    max-width: 80%;
+    margin: 50px auto;
+    border-radius: 15px;
+    /*background-image: url('C:/Users/bhojr/OneDrive/Desktop/KaVaaVi/assets/images/bg.png');*/
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(169, 137, 21, 0.717);
+    animation: zoom-in 0.6s ease-in; /* Apply zoom-in animation */
+}
 
+.cta h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #000000; /* Adjust text color to stand out on the background */
+}
+
+.cta p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #ffffff; /* Adjust text color to stand out on the background */
+}
+
+.cta button {
+    padding: 15px 30px;
+    border: none;
+    background-color: #ffbf78;
+    color: white;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta button:hover {
+    background-color: #ffffff; /* Lighten button color on hover */
+    color: #050505; /* Change text color on hover */
+}
+
+.separator-horizontal {
+    background: linear-gradient(90deg, rgba(51, 51, 51, 0) 0%, rgba(51, 51, 51, 0.3) 49.9103%, rgba(51, 51, 51, 0) 100%);
+    height: 2px;
+    width: 100%;
+    margin: 40px;
+}
+
+/* Zoom-in animation */
+@keyframes zoom-in {
+    0% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .cta {
+        max-width: 90%;
+        padding: 40px;
+    }
+
+    .cta h2 {
+        font-size: 1.5em;
+    }
+
+    .cta p {
+        font-size: 1em;
+    }
+
+    .cta button {
+        padding: 12px 25px;
+        font-size: 0.9em;
+    }
+    .separator-horizontal {
+        display: block;
+        margin: 40px;
+        margin-left: 0;
+        
+    }
+}
+
+@media (max-width: 468px) {
+    .cta {
+        max-width: 95%;
+        padding: 30px;
+    }
+
+    .cta h2 {
+        font-size: 1.2em;
+    }
+
+    .cta p {
+        font-size: 0.9em;
+    }
+
+    .cta button {
+        padding: 10px 20px;
+        font-size: 0.8em;
+    }
+    .separator-horizontal {
+        display: block;
+        margin: 40px;
+        margin-left: 0;
+        
+    }
+}
 
 
 

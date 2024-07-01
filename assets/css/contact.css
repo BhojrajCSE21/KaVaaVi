@@ -148,8 +148,12 @@ nav a {
 
 .header h1 {
     font-size: 52px;
-    color: #1a1a1a;
+    color:#FF7D29;
     margin: 0;
+}
+
+.header h1 span {
+    color:#FFBF78;
 }
 
 .header p {
@@ -295,6 +299,12 @@ nav a {
     
 }
 
+.faq-header h1 {
+    font-size: 32px;
+    color:#FF7D29;
+    margin: 10px;
+}
+
 .faq-details {
     width: 80%;
     margin: auto;
@@ -371,7 +381,7 @@ nav a {
     text-align: center;
     padding: 50px;
     margin-top: 50px;
-    background-color: #FF7D29; /* Adjusted background color */
+    background-color:#FFBF78; /* Adjusted background color */
     max-width: 80%;
     margin: 50px auto;
     border-radius: 15px;
@@ -383,21 +393,23 @@ nav a {
 }
 
 .cta h2 {
-    font-size: 32px;
+    font-size: 38px;
     margin-bottom: 20px;
     color: #000000; /* Adjust text color to stand out on the background */
+    line-height: 1.5;
 }
 
 .cta p {
     font-size: 16px;
     margin-bottom: 30px;
     color: #ffffff; /* Adjust text color to stand out on the background */
+    line-height: 1.5;
 }
 
 .cta button {
     padding: 15px 30px;
     border: none;
-    background-color: #ffbf78;
+    background-color: #FF7D29;
     color: white;
     border-radius: 25px;
     font-size: 18px;

@@ -548,6 +548,7 @@ main {
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
+    width: 80%;
 }
 
 .why-choose-us-text {
@@ -632,6 +633,8 @@ main {
     width: 500px;
     height: 800px;
     border-radius: 50px;
+    margin-left: 30px;
+    animation: pulse 10s infinite;
 }
 
 .why-choose-us.image2 {
@@ -642,7 +645,7 @@ main {
     width: 450px;
     border-radius: 50px;
     height: 800px;
-    opacity: 0.3; /* Optional: for transparency effect */
+    opacity: 0.3; 
 }
 
 /* why choose us end */
@@ -1009,7 +1012,7 @@ footer {
 .separator-horizontal {
     background: linear-gradient(90deg, rgba(51, 51, 51, 0) 0%, rgba(51, 51, 51, 0.3) 49.9103%, rgba(51, 51, 51, 0) 100%);
     height: 2px;
-    width: 100%;
+    width: 80%;
     margin: 40px;
 }
 
@@ -1135,39 +1138,76 @@ footer {
     .goto-get-started, .hero-contact-button {
         width: 100%; 
     }
-    .why-choose-us-text,
-    .about-us-text {
-        text-align: center;
-        width: 100%;
-        padding-right: 0;
+    .about-container {
+        flex-direction: column-reverse; 
+        align-items: center; 
     }
 
-    .why-choose-us-image,
-    .about-us-image-container {
-        order: 2; /* Move images below text */
-        margin-top: 20px;
-        width: 100%;
+    .about-text {
+        order: 2; 
+        text-align: center; 
+        padding: 0 10px; 
+        margin-bottom: 40px;
     }
 
-    .why-choose-us-text,
-    .about-us-text {
-        order: 1;
+    .about-us.image1 {
+        width: 100%; 
+        max-width: 350px; 
+        height: auto; 
+    }
+
+    .about-us.image2 {
+        width: 100%; 
+        max-width: 300px; 
+        height: auto; 
+        margin-top: 20px; 
+        right: auto; 
+        left: 0; 
     }
 
     .stats-container {
-        flex-direction: column;
+        flex-direction: column; 
+        align-items: center; 
+        margin-top: 30px; 
     }
 
     .stat-card {
-        width: 100%;
-        max-width: 300px;
-        margin-bottom: 20px;
+        width: 80%; 
+        margin-bottom: 20px; 
     }
 
     .vertical-line {
-        display: none;
+        display: none; 
     }
-
+    .why-choose-us-container {
+        flex-direction: column-reverse; 
+    }
+    
+    .why-choose-us-text {
+        order: 2; 
+        padding-right: 0px;
+    }
+    
+    .why-choose-us-image {
+        order: 1; 
+        margin-top: 30px; 
+        text-align: center; 
+    }
+    
+    .why-choose-us.image1 {
+        width: 100%; 
+        max-width: 500px; 
+        height: auto; 
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+    
+    .why-choose-us.image2 {
+        width: 100%; 
+        max-width: 450px; 
+        height: auto; 
+        margin-top: 20px; 
+    }
 }
 @media (max-width: 1076px) {
     nav ul {
@@ -1189,9 +1229,75 @@ footer {
     .hero {
         height: 62vh;
     }
-    
-}
+    .about-container {
+        flex-direction: column-reverse; 
+        align-items: center; 
+    }
 
+    .about-text {
+        order: 2; 
+        text-align: center; 
+        padding: 0 10px; 
+        margin-bottom: 40px;
+    }
+
+    .about-us.image1 {
+        width: 100%; 
+        max-width: 350px; 
+        height: auto; 
+    }
+
+    .about-us.image2 {
+        width: 100%; 
+        max-width: 300px; 
+        height: auto; 
+        margin-top: 20px; 
+        right: auto; 
+        left: 0; 
+    }
+
+    .stats-container {
+        flex-direction: column; 
+        align-items: center; 
+        margin-top: 30px; 
+    }
+
+    .stat-card {
+        width: 80%; 
+        margin-bottom: 20px; 
+    }
+
+    .vertical-line {
+        display: none; 
+    }
+    .why-choose-us-container {
+        flex-direction: column-reverse; 
+    }
+    
+    .why-choose-us-text {
+        order: 2; 
+        padding-right: 0px;
+    }
+    
+    .why-choose-us-image {
+        order: 1; 
+        margin-top: 30px; 
+        text-align: center; 
+    }
+    
+    .why-choose-us.image1 {
+        width: 100%; 
+        max-width: 500px; 
+        height: auto; 
+    }
+    
+    .why-choose-us.image2 {
+        width: 100%; 
+        max-width: 450px; 
+        height: auto; 
+        margin-top: 20px; 
+    }
+}
 
 @media (max-width: 768px) {
     main {

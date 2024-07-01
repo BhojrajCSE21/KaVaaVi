@@ -750,6 +750,13 @@ footer {
     
 }
 
+.faq-header h1{
+    color: #FF7D29;
+    font-size: 35px;
+    margin-bottom: 10px;
+
+}
+
 .faq-details {
     width: 80%;
     margin: auto;
@@ -833,7 +840,7 @@ footer {
 
 .test-title {
     background-color: #ffffff;
-    color: #0a0a0a;
+    color: #ff7d29;
     display: inline-block;
     padding: 10px 20px;
     border-radius: 20px;
@@ -969,7 +976,7 @@ footer {
     text-align: center;
     padding: 50px;
     margin-top: 50px;
-    background-color: #FF7D29; /* Adjusted background color */
+    background-color: #ffbf78; /* Adjusted background color */
     max-width: 80%;
     margin: 50px auto;
     border-radius: 15px;
@@ -981,21 +988,23 @@ footer {
 }
 
 .cta h2 {
-    font-size: 35px;
+    font-size: 38px;
     margin-bottom: 20px;
     color: #000000; /* Adjust text color to stand out on the background */
+    line-height: 1.5;
 }
 
 .cta p {
     font-size: 16px;
     margin-bottom: 30px;
-    color: #ffffff; /* Adjust text color to stand out on the background */
+    color: #1b1a1a86; /* Adjust text color to stand out on the background */
+    line-height: 1.5;
 }
 
 .cta button {
     padding: 15px 30px;
     border: none;
-    background-color: #ffbf78;
+    background-color: #ff7d29;
     color: white;
     border-radius: 25px;
     font-size: 18px;

@@ -385,7 +385,7 @@ nav a {
     max-width: 80%;
     margin: 50px auto;
     border-radius: 15px;
-    background-image: url('C:/Users/bhojr/OneDrive/Desktop/KaVaaVi/assets/images/bg.png');
+    /*background-image: url('C:/Users/bhojr/OneDrive/Desktop/KaVaaVi/assets/images/bg.png');*/
     background-size: cover;
     background-position: center;
     box-shadow: 0 4px 8px rgba(169, 137, 21, 0.717);
@@ -402,7 +402,7 @@ nav a {
 .cta p {
     font-size: 16px;
     margin-bottom: 30px;
-    color: #ffffff; /* Adjust text color to stand out on the background */
+    color: #1b1a1a86; /* Adjust text color to stand out on the background */
     line-height: 1.5;
 }
 

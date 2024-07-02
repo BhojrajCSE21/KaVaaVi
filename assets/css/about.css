@@ -617,7 +617,7 @@ main {
 }
 
 .wcs {
-    background-color: #da9f1f;
+    background-color: #FF7D29;
     color: #fff;
     display: inline-block;
     padding: 10px 20px;
@@ -625,7 +625,7 @@ main {
 }
 .header-wcs {
     font-size:2.7rem;
-    color:#FF7D29;
+    color:#da9f1f;
     margin-bottom: 20px;
 }
 

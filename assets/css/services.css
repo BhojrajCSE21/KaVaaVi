@@ -77,31 +77,35 @@ nav a {
             background-color: #f2f2f2;
             font-family: "General Sans", "General Sans Placeholder", sans-serif;
         }
-        .main h1 {
-            color: #FF7D29;
-            padding-top: 10%;
-            font-size: 7ch;
+        .header {
+            margin-top: 25px;
             text-align: center;
+            margin-bottom: 40px;
         }
-        .main p {
-            font-size: 3ch;
-            padding-bottom: 10%;
-            text-align: center;
-        }
-        .tag p {
+        
+        .contact-title {
             background-color: #ff7d29;
             color: #fff;
             display: inline-block;
             padding: 10px 20px;
             border-radius: 20px;
-            width: 10%;
-            font-size: 15px;
-            font-weight: bold;
-            text-align: center;
-            margin-left: 46%;
-            margin-top: 5%;
-            margin-bottom: 0;
-        }                                                                                                   
+            
+        }
+        
+        .header h1 {
+            font-size: 52px;
+            color:#FF7D29;
+            margin: 0;
+        }
+        
+        .header h1 span {
+            color:#FFBF78;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            color: #555;
+        }                                                                                                  
 
 
         /* Responsive adjustments */
@@ -774,22 +778,22 @@ footer {
     }
     .nav-toggle {
         display: block;
-        background-color: #333;
-        color: #fff;
+        background-color: #ffffff;
+        color: #000000;
         padding: 10px 10px;
         border: none;
         border-radius: 5px;
         cursor: pointer;
     }
     .nav-toggle:hover {
-        background-color: #444;
+        background-color: #ffffff;
     }
     .nav-menu.active {
         display: block;
         position: absolute;
         top: 100%;
         left: 0px;
-        background-color: #333;
+        background-color: #ff7d29;
         padding: 10px;
         border-radius: 5px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -855,9 +859,6 @@ footer {
     }
     section {
         margin-bottom: 10px;
-    }
-    footer {
-        padding: 0.5em;
     }
     footer ul {
         flex-direction: column;

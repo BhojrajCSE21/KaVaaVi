@@ -829,7 +829,6 @@ footer {
 
 /* testimonials Section Styles */
 
-/* testimonials Section Styles */
 
 .testimonial-section {
     background: #ff7d29;
@@ -1120,22 +1119,22 @@ footer {
     }
     .nav-toggle {
         display: block;
-        background-color: #333;
-        color: #fff;
+        background-color: #ffffff;
+        color: #080808;
         padding: 10px 10px;
         border: none;
         border-radius: 5px;
         cursor: pointer;
     }
     .nav-toggle:hover {
-        background-color: #444;
+        background-color: #ffffff;
     }
     .nav-menu.active {
         display: block;
         position: absolute;
         top: 100%;
         left: 0px;
-        background-color: #333;
+        background-color: #FF7D29;
         padding: 10px;
         border-radius: 5px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -1349,9 +1348,6 @@ footer {
     }
     section {
         margin-bottom: 10px;
-    }
-    footer {
-        padding: 0.5em;
     }
     footer ul {
         flex-direction: column;

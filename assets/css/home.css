@@ -131,6 +131,7 @@ main {
     padding: 0;
     height: auto;
 }
+
 .hero {
     background-color: #fafafa;
     width: 100%;
@@ -139,6 +140,7 @@ main {
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
+
 .kavavi-container {
     position: relative;
     height: 100vh;
@@ -160,6 +162,7 @@ main {
     background: radial-gradient(circle, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 1) 70%);
     pointer-events: none;
 }
+
 .kavavi {
     font-size: 6rem;
     color: #ffa500;
@@ -193,121 +196,164 @@ main {
 .kavavi-positions div {
     position: absolute;
     color: #333;
-    font-size: 0.9 rem;
+    font-size: 0.9rem;
     font-weight: bold;
+    text-align: center;
 }
 
-.kavavi-positions .top-right {
-    top: 20%;
-    right: 20%;
+.kavavi-positions .top-right,
+.kavavi-positions .bottom-left,
+.kavavi-positions .center-right,
+.kavavi-positions .bottom-right,
+.kavavi-positions .top-left,
+.kavavi-positions .center-left {
     opacity: 0.5;
     border: 1px solid black;
     border-radius: 10px;
     padding: 10px;
     z-index: 1;
-    text-align: center;
+}
+
+.kavavi-positions .top-right {
+    top: 20%;
+    right: 20%;
 }
 
 .kavavi-positions .bottom-left {
     bottom: 25%;
     left: 16%;
-    opacity: 0.5;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 10px;
 }
 
 .kavavi-positions .center-right {
     top: 44%;
     right: 10%;
-    opacity: 0.5;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 10px;
 }
 
 .kavavi-positions .bottom-right {
     bottom: 25%;
     right: 16%;
-    opacity: 0.5;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 10px;
 }
 
 .kavavi-positions .top-left {
     top: 20%;
     left: 20%;
-    opacity: 0.5;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 10px;
 }
 
 .kavavi-positions .center-left {
     top: 44%;
     left: 10%;
-    opacity: 0.5;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 10px;
 }
-.kavavi-positions img{
+
+.kavavi-positions img {
     width: 23px;
     margin-bottom: -5px;
 }
-.kavavi-container h3{
+
+.kavavi-container h3 {
     z-index: 1;
     text-align: center;
     margin-left: 30%;
     margin-right: 30%;
     justify-content: space-between;
 }
+
 .button-container {
     display: flex;
     justify-content: center;
-    gap: 20px; 
+    gap: 20px;
 }
 
-.goto-get-started{
-    margin-top: 30px;
-    background-color: #FF7D29;
-    color: white;
-    padding: 15px 40px;
-    border-radius: 20px;
-    border: 2px solid #ff8800;
-    cursor: pointer;
-    font-size: 18px;
-    z-index: 1;
-    justify-content: space-between;
-    flex-shrink: 0; 
-    width: 200px; 
-}
+.goto-get-started,
 .hero-contact-button {
     margin-top: 30px;
-    background-color: #ffffff;
-    color: #ff8800;
     padding: 15px 40px;
     border-radius: 20px;
-    border: 2px solid #ff8800;
     cursor: pointer;
     font-size: 18px;
     z-index: 1;
     justify-content: space-between;
-    flex-shrink: 0; 
-    width: 200px; 
+    flex-shrink: 0;
+    width: 200px;
+    transition: all 0.3s ease;
 }
 
-.goto-get-started:hover{
+.goto-get-started {
+    background-color: #ff7d29;
+    color: white;
+    border: 2px solid #ff8800;
+}
+
+.hero-contact-button {
+    background-color: #ffffff;
+    color: #ff8800;
+    border: 2px solid #ff8800;
+}
+
+.goto-get-started:hover {
     background-color: white;
     color: #ff8800;
     border: 2px solid #ff8800;
 }
+
 .hero-contact-button:hover {
     background-color: #ff8800;
     color: white;
     border: 2px solid #ff8800;
 }
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+    .kavavi {
+        font-size: 4rem;
+    }
+
+    .kavavi-container h3 {
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 1rem;
+    }
+
+    .kavavi-positions div {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .goto-get-started,
+    .hero-contact-button {
+        width: 180px;
+    }
+}
+
+@media (max-width: 468px) {
+    .kavavi {
+        font-size: 2.5rem;
+    }
+
+    .kavavi-container h3 {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 0.9rem;
+    }
+
+    .kavavi-positions div {
+        font-size: 0.7rem;
+        padding: 6px;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .goto-get-started,
+    .hero-contact-button {
+        width: 150px;
+    }
+}
+
 /*------------------------------------------------------------ Hero Section End ------------------------------------------------------------*/
 
 /* Trusted By Section */
@@ -533,9 +579,6 @@ main {
 
 /* About us end  */
 
-/* Services */
-
-/* Services end */
 
 /* Why choose us */
 .section {
@@ -1155,23 +1198,6 @@ footer {
     .hero {
         height: 52vh;
     }
-    .kavavi {
-        font-size: 4rem;
-    }
-    .kavavi-container h3{
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-    .button-container {
-        flex-direction: column; 
-        align-items: center; 
-        padding: 10px 20px;
-        gap: 10px;
-    }
-    .goto-get-started, .hero-contact-button {
-        width: 100%; 
-    }
-
     .logos img {
         width: 32.5%; /* 100% / 8 images */
         margin-right: 50px;
@@ -1354,5 +1380,103 @@ footer {
     }
     footer li {
         margin-right: 0;
+    }
+}
+
+
+.container {
+    text-align: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #FF7D29;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service {
+    background: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 45%;
+    text-align: left;
+    position: relative;
+    margin-bottom: 50px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.service h3 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #FF7D29;
+}
+
+.service p {
+    margin: 20px 0;
+}
+
+.service a {
+    text-decoration: none;
+    color: #FFBF78;
+    font-weight: bold;
+}
+
+/* Keyframes for animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .service {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .service h3 {
+        font-size: 20px;
+    }
+
+    .service p {
+        font-size: 14px;
     }
 }

@@ -124,6 +124,12 @@ nav a {
     }
 }
 
+@media (max-width: 1076px) {
+    nav ul {
+        margin-right: 0px;
+    }
+}
+
 @media (max-width:1080px) {
     .nav-menu {
         display: none;
@@ -180,6 +186,25 @@ nav a {
         width: 100%; 
     }
 
+}
+@media (max-width: 1076px) {
+    .kavavi-positions{
+        display: none;
+    }
+    .kavavi-container {
+        position: relative;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-image: url(/assets/images/bg.png);
+        background-position: center;
+    }
+    .hero {
+        height: 62vh;
+    }
+    
 }
 
 /*------------------------------------------------------------ Nav bar End------------------------------------------------------------*/
@@ -238,7 +263,7 @@ nav a {
 .contact-item img {
     width: 40px;
     height: 40px;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 
 

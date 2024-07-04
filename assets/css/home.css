@@ -796,6 +796,7 @@ footer {
 .faq {
     margin-top: 50px;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .faq-title {
@@ -809,15 +810,16 @@ footer {
 }
 
 .faq h3 {
-    font-size: 18px;
+    font-size: 20px;
     color: white; /* White text color */
     
 }
 
-.faq-header h1 {
-    font-size: 32px;
-    color:#FF7D29;
-    margin: 10px;
+.faq-header h1{
+    color: #FF7D29;
+    font-size: 35px;
+    margin-bottom: 10px;
+
 }
 
 .faq-details {
@@ -874,7 +876,7 @@ footer {
 
 @media (max-width: 468px) {
     .faq-details {
-        width: 98%;
+        width: 95%;
     }
 
     .faq h2 {
@@ -882,18 +884,13 @@ footer {
     }
 
     .faq-details summary {
-        font-size: 0.85em;
-        padding: 8px;
+        font-size: 1em;
     }
 
-    .faq-details summary .symbol{
-        font-size: 0.95em;
-    }
-    .faq-details p {
-        font-size: 0.85em;
+    .faq-details summary .symbol {
+        font-size: 1.2em;
     }
 }
-
 
 /* testimonials Section Styles */
 
@@ -1065,7 +1062,7 @@ footer {
     text-align: center;
     padding: 50px;
     margin-top: 50px;
-    background-color:#FFBF78; /* Adjusted background color */
+    background-color: #ffbf78; /* Adjusted background color */
     max-width: 70%;
     margin: 50px auto;
     border-radius: 15px;
@@ -1093,7 +1090,7 @@ footer {
 .cta button {
     padding: 15px 30px;
     border: none;
-    background-color: #FF7D29;
+    background-color: #ff7d29;
     color: white;
     border-radius: 25px;
     font-size: 18px;
@@ -1107,6 +1104,13 @@ footer {
     color: #050505; /* Change text color on hover */
 }
 
+.separator-horizontal {
+    background: linear-gradient(90deg, rgba(51, 51, 51, 0) 0%, rgba(51, 51, 51, 0.3) 49.9103%, rgba(51, 51, 51, 0) 100%);
+    height: 2px;
+    width: 80%;
+    margin: 40px;
+}
+
 /* Zoom-in animation */
 @keyframes zoom-in {
     0% {
@@ -1114,47 +1118,6 @@ footer {
     }
     100% {
         transform: scale(1);
-    }
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .cta {
-        max-width: 90%;
-        padding: 40px;
-    }
-
-    .cta h2 {
-        font-size: 1.5em;
-    }
-
-    .cta p {
-        font-size: 1em;
-    }
-
-    .cta button {
-        padding: 12px 25px;
-        font-size: 0.9em;
-    }
-}
-
-@media (max-width: 468px) {
-    .cta {
-        max-width: 95%;
-        padding: 30px;
-    }
-
-    .cta h2 {
-        font-size: 1.2em;
-    }
-
-    .cta p {
-        font-size: 0.9em;
-    }
-
-    .cta button {
-        padding: 10px 20px;
-        font-size: 0.8em;
     }
 }
 
@@ -1181,6 +1144,7 @@ footer {
         display: block;
         position: absolute;
         top: 100%;
+        right: 20px;
         background-color: #FF7D29;
         padding: 10px;
         border-radius: 5px;
@@ -1200,7 +1164,6 @@ footer {
         position: relative;
     }
     .hero {
-        margin-top: 100px;
         height: 52vh;
     }
     .logos img {
@@ -1219,12 +1182,6 @@ footer {
         text-align: center; 
         padding: 0 10px; 
         margin-bottom: 40px;
-        justify-content: center;
-    }
-    .about-text h4{
-        align-items: center;
-        justify-content: center;
-        margin-left: 60px;
     }
 
     .about-us.image1 {
@@ -1367,15 +1324,12 @@ footer {
     
     .why-choose-us.image1 {
         width: 100%; 
-        max-width: 500px; 
+        max-width: 0px; 
         height: auto; 
     }
     
     .why-choose-us.image2 {
-        width: 100%; 
-        max-width: 450px; 
-        height: auto; 
-        margin-top: 20px; 
+        display: none;
     }
 }
 

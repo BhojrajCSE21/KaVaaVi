@@ -120,6 +120,55 @@ nav a {
     color: white;
     border: 2px solid white;
 }
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+    }
+    .nav-toggle {
+        display: block;
+        margin-right: 20px;
+        background-color: #ffffff;
+        color: #000000;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .nav-toggle:hover {
+        background-color: #ffffff;
+    }
+    .nav-menu.active {
+        display: block;
+        position: absolute;
+        top: 100%;
+        background-color: #FF7D29;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .nav-menu.active li {
+        margin-right: 0;
+        padding-right: 0px
+    }
+    .nav-menu.active a {
+        color: #fff;
+    }
+    .get-started {
+        display: none;
+    }
+    nav {
+        position: relative;
+    }
+}
+
+@media (max-width: 1076px) {
+    nav ul {
+        margin-right: 0px;
+    }
+}
+
 /*------------------------------------------------------------ Nav bar End------------------------------------------------------------*/
 
 /*------------------------------------------------------------ Hero Section ------------------------------------------------------------*/
@@ -224,6 +273,7 @@ main {
     .container {
         width: 95%;
         padding: 10px;
+        margin-top: 60px;
     }
 
     .header h1 {
@@ -1015,6 +1065,7 @@ main {
 }
 
 /*-------------------------------------------------------------FOOTER-SECTION------------------------------------------------------------  */
+/* footer start  */
 footer {
     background-color: #FF7D29;
     color: #fff;
@@ -1078,9 +1129,31 @@ footer {
     z-index: 1;
     filter: drop-shadow(2px 2px 1px #000000f0);
 }
+.footer-container input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 300px;
+}
+
+.footer-container button {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-container button:hover {
+    background-color: #ffffff;
+    color: #ff7d29;
+}
 
 /* Responsive Styles */
-@media (max-width: 1080px) {
+@media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
         align-items: center;
@@ -1091,6 +1164,103 @@ footer {
     }
 }
 
+/* FAQ Section Styles */
+.faq {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.faq-title {
+    background-color: #ff7d29;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    
+}
+
+.faq h3 {
+    font-size: 18px;
+    color: white; /* White text color */
+    
+}
+
+.faq-header h1 {
+    font-size: 32px;
+    color:#FF7D29;
+    margin: 10px;
+}
+
+.faq-details {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.faq-details details {
+    margin-bottom: 10px;
+}
+
+.faq-details summary {
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.faq-details summary:hover {
+    background-color: #e0e0e0;
+}
+
+.faq-details summary .symbol {
+    font-size: 1.5em;
+    transition: transform 0.3s;
+}
+
+.faq-details details[open] summary .symbol {
+    transform: rotate(45deg); /* Rotate to form an 'X' */
+}
+
+.faq-details p {
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    margin: 0;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .faq-details {
+        width: 90%;
+    }
+}
+
+@media (max-width: 468px) {
+    .faq-details {
+        width: 95%;
+    }
+
+    .faq h2 {
+        font-size: 1.5em;
+    }
+
+    .faq-details summary {
+        font-size: 1em;
+    }
+
+    .faq-details summary .symbol {
+        font-size: 1.2em;
+    }
+}
 
 
 /*----------------------------------------------------------- Responsive Styles -----------------------------------------------------------*/
@@ -1115,7 +1285,6 @@ footer {
         display: block;
         position: absolute;
         top: 100%;
-        left: 0px;
         background-color: #FF7D29;
         padding: 10px;
         border-radius: 5px;
@@ -1153,9 +1322,6 @@ footer {
 
 }
 @media (max-width: 1076px) {
-    nav ul {
-        margin-right: 10px;
-    }
     .kavavi-positions{
         display: none;
     }

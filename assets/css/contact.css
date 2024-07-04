@@ -20,7 +20,7 @@ header {
     width: 110px;
     height: 80px;
     margin-right: 20px;
-    filter: drop-shadow(1px 1px 1px #ffffff);
+    filter: drop-shadow(1px 1px 1px #FFBF78);
 }
 .logo {
     width: 110px;
@@ -89,9 +89,10 @@ nav a {
     }
     .nav-toggle {
         display: block;
+        margin-right: 20px;
         background-color: #ffffff;
-        color: #040404;
-        padding: 10px 10px;
+        color: #000000;
+        padding: 10px 25px;
         border: none;
         border-radius: 5px;
         cursor: pointer;
@@ -103,7 +104,47 @@ nav a {
         display: block;
         position: absolute;
         top: 100%;
-        left: 0px;
+        background-color: #FF7D29;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .nav-menu.active li {
+        margin-right: 0;
+        padding-right: 0px
+    }
+    .nav-menu.active a {
+        color: #fff;
+    }
+    .get-started {
+        display: none;
+    }
+    nav {
+        position: relative;
+    }
+}
+
+@media (max-width:1080px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+    }
+    .nav-toggle {
+        display: block;
+        background-color: #f0f0f0;
+        color: #000000;
+        padding: 10px 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .nav-toggle:hover {
+        background-color: #fafafa;
+    }
+    .nav-menu.active {
+        display: block;
+        position: absolute;
+        top: 100%;
         background-color: #FF7D29;
         padding: 10px;
         border-radius: 5px;
@@ -122,7 +163,25 @@ nav a {
     nav {
         position: relative;
     }
+    .kavavi {
+        font-size: 4rem;
+    }
+    .kavavi-container h3{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .button-container {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 10px 20px;
+        gap: 10px;
+    }
+    .goto-get-started, .hero-contact-button {
+        width: 100%; 
+    }
+
 }
+
 /*------------------------------------------------------------ Nav bar End------------------------------------------------------------*/
 
 .container {
@@ -179,8 +238,9 @@ nav a {
 .contact-item img {
     width: 40px;
     height: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
+
 
 .contact-item p {
     margin: 5px 0;
@@ -254,7 +314,7 @@ nav a {
     text-align: center;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input{
     width: 80%;
     padding: 10px;
     margin: 10px 0;
@@ -262,6 +322,17 @@ nav a {
     border-radius: 5px;
     font-size: 1em;
 }
+
+.contact-form textarea{
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: "General Sans", "General Sans Placeholder", sans-serif;
+}
+
 
 .contact-form button {
     padding: 15px 30px;
@@ -367,11 +438,11 @@ nav a {
     }
 
     .faq-details summary {
-        font-size: 1em;
+        font-size: 0.8em;
     }
 
     .faq-details summary .symbol {
-        font-size: 1.2em;
+        font-size: 0.9em;
     }
 }
 
@@ -476,6 +547,7 @@ nav a {
 
 
 /* footer start  */
+/* footer start  */
 footer {
     background-color: #FF7D29;
     color: #fff;
@@ -502,7 +574,7 @@ footer {
     width: 110px;
     height: 80px;
     margin-right: 20px;
-    filter: drop-shadow(1px 1px 1px #ffffff);
+    filter: drop-shadow(1px 1px 1px #FFBF78);
 }
 .footer-logo{
     width: 110px;
@@ -537,7 +609,29 @@ footer {
     width: 24px;
     height: 24px;
     z-index: 1;
-    filter: drop-shadow(2px 2px 1px #fffffff0);
+    filter: drop-shadow(2px 2px 1px #000000f0);
+}
+.footer-container input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 300px;
+}
+
+.footer-container button {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-container button:hover {
+    background-color: #ffffff;
+    color: #ff7d29;
 }
 
 /* Responsive Styles */
@@ -552,4 +646,100 @@ footer {
     }
 }
 
+/* FAQ Section Styles */
+.faq {
+    margin-top: 50px;
+    text-align: center;
+}
 
+.faq-title {
+    background-color: #ff7d29;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    
+}
+
+.faq h3 {
+    font-size: 18px;
+    color: white; /* White text color */
+    
+}
+
+.faq-header h1 {
+    font-size: 32px;
+    color:#FF7D29;
+    margin: 10px;
+}
+
+.faq-details {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.faq-details details {
+    margin-bottom: 10px;
+}
+
+.faq-details summary {
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.faq-details summary:hover {
+    background-color: #e0e0e0;
+}
+
+.faq-details summary .symbol {
+    font-size: 1.5em;
+    transition: transform 0.3s;
+}
+
+.faq-details details[open] summary .symbol {
+    transform: rotate(45deg); /* Rotate to form an 'X' */
+}
+
+.faq-details p {
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    margin: 0;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .faq-details {
+        width: 90%;
+    }
+}
+
+@media (max-width: 468px) {
+    .faq-details {
+        width: 95%;
+    }
+
+    .faq h2 {
+        font-size: 1.5em;
+    }
+
+    .faq-details summary {
+        font-size: 1em;
+    }
+
+    .faq-details summary .symbol {
+        font-size: 1.2em;
+    }
+}
